@@ -15,7 +15,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             </span>
             <div className="space-y-4">
               <h1 className="max-w-2xl text-5xl font-semibold leading-tight tracking-tight">
-                Portfolio full-stack para dados financeiros, autenticacao e analytics.
+                Dashboard interativo para dados financeiros, autenticacao e analytics.
               </h1>
               <p className="text-muted max-w-xl text-lg">
                 Conecte contas de teste, importe transacoes para PostgreSQL e visualize indicadores, categorias e evolucao de gastos em um painel profissional.

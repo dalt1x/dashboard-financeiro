@@ -1,10 +1,10 @@
-# Dashboard de Financas
+# Dashboard Interativo
 
 Aplicacao full-stack para conectar contas no Plaid Sandbox, importar transacoes, categorizar gastos e visualizar indicadores financeiros em um dashboard moderno.
 
 ## Visao geral
 
-Este projeto foi construido como portfolio para demonstrar:
+Este projeto foi construido para demonstrar:
 
 - integracao com API financeira
 - autenticacao com isolamento por usuario
