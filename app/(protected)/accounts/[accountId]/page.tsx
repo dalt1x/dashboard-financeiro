@@ -30,7 +30,7 @@ export default async function AccountDetailPage({ params }: Props) {
       <PageHeader
         eyebrow="Conta"
         title={detail.account.name}
-        description={`Detalhamento da conta ${detail.account.plaidItem.institutionName ?? "Sandbox institution"} com saldo, categorias e movimentacoes recentes.`}
+        description={`Detalhamento da conta ${detail.account.plaidItem.institutionName ?? "Sandbox institution"} com saldo, categorias e movimentações recentes.`}
         actions={
           <Button asChild variant="secondary">
             <Link href="/accounts">
@@ -68,7 +68,7 @@ export default async function AccountDetailPage({ params }: Props) {
         </Card>
         <Card className="panel-tint border-[var(--color-border)]">
           <CardContent className="pt-6">
-            <p className="data-label">Movimentacoes</p>
+            <p className="data-label">Movimentações</p>
             <p className="text-strong mt-2 text-3xl font-semibold">{detail.transactionCount}</p>
           </CardContent>
         </Card>
@@ -83,13 +83,13 @@ export default async function AccountDetailPage({ params }: Props) {
 
       <Card className="panel-tint border-[var(--color-border)]">
         <CardHeader>
-          <CardTitle>Movimentacoes recentes</CardTitle>
-          <CardDescription>Ultimos lancamentos sincronizados para esta conta.</CardDescription>
+          <CardTitle>Movimentações recentes</CardTitle>
+          <CardDescription>Últimos lançamentos sincronizados para esta conta.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-3">
           {detail.account.transactions.length === 0 ? (
             <div className="empty-state rounded-2xl border border-dashed px-4 py-8 text-center text-sm">
-              Nenhuma transacao sincronizada para esta conta.
+              Nenhuma transação sincronizada para esta conta.
             </div>
           ) : (
             detail.account.transactions.map((transaction) => (

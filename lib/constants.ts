@@ -1,11 +1,11 @@
 import { InternalCategory } from "@prisma/client";
 
 export const internalCategoryLabels: Record<InternalCategory, string> = {
-  ALIMENTACAO: "Alimentacao",
+  ALIMENTACAO: "Alimentação",
   TRANSPORTE: "Transporte",
   MORADIA: "Moradia",
   LAZER: "Lazer",
-  SAUDE: "Saude",
+  SAUDE: "Saúde",
   COMPRAS: "Compras",
   SALARIO: "Salario",
   TRANSFERENCIAS: "Transferencias",

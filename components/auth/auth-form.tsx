@@ -55,7 +55,7 @@ export function AuthForm({ mode, redirectTo = "/dashboard" }: AuthFormProps) {
       router.push(redirectTo);
       router.refresh();
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : "Nao foi possivel concluir a acao.");
+      toast.error(error instanceof Error ? error.message : "Nao foi possivel concluir a ação.");
     } finally {
       setIsSubmitting(false);
     }
@@ -70,7 +70,7 @@ export function AuthForm({ mode, redirectTo = "/dashboard" }: AuthFormProps) {
         <CardDescription>
           {mode === "login"
             ? "Acesse sua area privada e conecte o Plaid Sandbox."
-            : "Cadastre-se para salvar contas, transacoes e categorias por usuario."}
+            : "Cadastre-se para salvar contas, transações e categorias por usuario."}
         </CardDescription>
       </CardHeader>
       <CardContent>

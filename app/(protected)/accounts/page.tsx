@@ -17,7 +17,7 @@ export default async function AccountsPage() {
       <PageHeader
         eyebrow="Contas"
         title="Contas conectadas"
-        description="Cada conta sincronizada fica vinculada ao usuario autenticado e mostra dados de saldo e instituicao do sandbox."
+        description="Cada conta sincronizada fica vinculada ao usuario autenticado e mostra dados de saldo e instituição do sandbox."
         actions={<PlaidConnectButton />}
       />
 
@@ -35,7 +35,7 @@ export default async function AccountsPage() {
                 <div className="flex items-center justify-between gap-3">
                   <div>
                     <CardTitle>{account.name}</CardTitle>
-                    <CardDescription>{account.plaidItem.institutionName ?? "Instituicao sandbox"}</CardDescription>
+                    <CardDescription>{account.plaidItem.institutionName ?? "Instituição sandbox"}</CardDescription>
                   </div>
                   <Badge variant="secondary">{account.type}</Badge>
                 </div>

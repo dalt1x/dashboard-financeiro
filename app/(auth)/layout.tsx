@@ -11,14 +11,14 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-6xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <section className="space-y-8">
             <span className="inline-flex rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-4 py-2 text-sm font-medium text-[var(--color-text-strong)]">
-              Integracao real com Plaid Sandbox
+              Integração real com Plaid Sandbox
             </span>
             <div className="space-y-4">
               <h1 className="max-w-2xl text-5xl font-semibold leading-tight tracking-tight">
-                Dashboard interativo para dados financeiros, autenticacao e analytics.
+                Dashboard interativo para dados financeiros, autenticação e analytics.
               </h1>
               <p className="text-muted max-w-xl text-lg">
-                Conecte contas de teste, importe transacoes para PostgreSQL e visualize indicadores, categorias e evolucao de gastos em um painel profissional.
+                Conecte contas de teste, importe transações para PostgreSQL e visualize indicadores, categorias e evolução de gastos em um painel profissional.
               </p>
             </div>
             <div className="grid max-w-2xl gap-4 sm:grid-cols-3">

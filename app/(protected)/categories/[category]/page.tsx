@@ -36,7 +36,7 @@ export default async function CategoryDetailPage({ params }: Props) {
       <PageHeader
         eyebrow="Categoria"
         title={internalCategoryLabels[normalizedCategory]}
-        description="Analise de desempenho, orcamento e distribuicao por conta para a categoria selecionada."
+        description="Analise de desempenho, orcamento e distribuição por conta para a categoria selecionada."
         actions={
           <Button asChild variant="secondary">
             <Link href="/dashboard">
@@ -50,7 +50,7 @@ export default async function CategoryDetailPage({ params }: Props) {
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <Card className="panel-tint border-[var(--color-border)]">
           <CardContent className="pt-6">
-            <p className="data-label">Gasto no mes</p>
+            <p className="data-label">Gasto no mês</p>
             <p className="text-strong mt-2 text-3xl font-semibold">
               {formatCurrency(detail.totals.totalSpentMonth)}
             </p>
@@ -58,7 +58,7 @@ export default async function CategoryDetailPage({ params }: Props) {
         </Card>
         <Card className="panel-tint border-[var(--color-border)]">
           <CardContent className="pt-6">
-            <p className="data-label">Mes anterior</p>
+            <p className="data-label">Mês anterior</p>
             <p className="text-strong mt-2 text-3xl font-semibold">
               {formatCurrency(detail.comparison.previousSpent)}
             </p>
@@ -92,7 +92,7 @@ export default async function CategoryDetailPage({ params }: Props) {
         <TrendChart data={detail.monthlyTrend} />
         <Card className="panel-tint border-[var(--color-border)]">
           <CardHeader>
-            <CardTitle>Distribuicao por conta</CardTitle>
+            <CardTitle>Distribuição por conta</CardTitle>
             <CardDescription>Quanto cada conta contribuiu para essa categoria.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
@@ -116,15 +116,15 @@ export default async function CategoryDetailPage({ params }: Props) {
 
       <Card className="panel-tint border-[var(--color-border)]">
         <CardHeader>
-          <CardTitle>Transacoes recentes</CardTitle>
+          <CardTitle>Transações recentes</CardTitle>
           <CardDescription>
-            Lancamentos vinculados a {internalCategoryLabels[normalizedCategory]}.
+            Lançamentos vinculados a {internalCategoryLabels[normalizedCategory]}.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-3">
           {detail.recentTransactions.length === 0 ? (
             <div className="empty-state rounded-2xl border border-dashed px-4 py-8 text-center text-sm">
-              Nenhuma transacao encontrada para esta categoria.
+              Nenhuma transação encontrada para esta categoria.
             </div>
           ) : (
             detail.recentTransactions.map((transaction) => (

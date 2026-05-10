@@ -9,9 +9,9 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/transactions", label: "Transacoes", icon: Receipt },
+  { href: "/transactions", label: "Transações", icon: Receipt },
   { href: "/accounts", label: "Contas", icon: CreditCard },
-  { href: "/settings", label: "Configuracoes", icon: Settings },
+  { href: "/settings", label: "Configurações", icon: Settings },
 ];
 
 export function AppSidebar({

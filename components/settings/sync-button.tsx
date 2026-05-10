@@ -20,14 +20,14 @@ export function SyncButton() {
             return;
           }
 
-          toast.success("Sincronizacao concluida.");
+          toast.success("Sincronização concluída.");
           window.location.reload();
         })
       }
       variant="secondary"
     >
       <RefreshCcw className={`mr-2 h-4 w-4 ${isPending ? "animate-spin" : ""}`} />
-      Atualizar transacoes
+      Atualizar transações
     </Button>
   );
 }

@@ -1,13 +1,13 @@
 # Dashboard Financeiro
 
-Aplicacao full-stack para conectar contas no Plaid Sandbox, importar transacoes, categorizar gastos e visualizar indicadores financeiros em um dashboard moderno.
+Aplicação full-stack para conectar contas no Plaid Sandbox, importar transações, categorizar gastos e visualizar indicadores financeiros em um dashboard moderno.
 
 ## Visao geral
 
 Este projeto foi construido para demonstrar:
 
-- integracao com API financeira
-- autenticacao com isolamento por usuario
+- integraçã com API financeira
+- autentição com isolamento por usuario
 - persistencia com PostgreSQL e Prisma
 - dashboard com filtros, categorias, comparativos e orcamentos
 - frontend moderno com Next.js App Router
@@ -29,12 +29,12 @@ Este projeto foi construido para demonstrar:
 
 - Cadastro e login
 - Conexao com conta sandbox da Plaid
-- Sincronizacao incremental de contas e transacoes
+- Sincronização incremental de contas e transações
 - Criptografia do `access_token` da Plaid em repouso
-- Rotacao de chave para o token criptografado
+- Rotação de chave para o token criptografado
 - Dashboard com saldo, receitas, despesas, graficos e comparativo mensal
 - Orcamentos mensais por categoria
-- Pagina de transacoes com filtros e edicao de categoria
+- Pagina de transações com filtros e edição de categoria
 - Pagina de detalhes por conta
 - Pagina de detalhes por categoria
 - Modo escuro com tema roxo
@@ -84,7 +84,7 @@ PLAID_COUNTRY_CODES="US"
 PLAID_ACCESS_TOKEN_ENCRYPTION_KEY="chave-opcional-mas-recomendada"
 ```
 
-Opcional para rotacao de chave do token Plaid:
+Opcional para rotação de chave do token Plaid:
 
 ```env
 PLAID_ACCESS_TOKEN_ENCRYPTION_KEY_ID="current"
@@ -122,10 +122,10 @@ Abra `http://localhost:3000`.
 2. Preencha `PLAID_CLIENT_ID`, `PLAID_SECRET` e `PLAID_ENV="sandbox"`.
 3. Entre no app.
 4. Clique em `Conectar conta sandbox`.
-5. Escolha uma instituicao de teste, como `First Platypus Bank`.
+5. Escolha uma instituição de teste, como `First Platypus Bank`.
 6. Conclua o fluxo do Plaid Link.
 
-Depois disso, a aplicacao salva o item Plaid, sincroniza contas e importa transacoes.
+Depois disso, a aplicação salva o item Plaid, sincroniza contas e importa transações.
 
 ## Scripts
 
@@ -146,8 +146,8 @@ O projeto tem testes para:
 
 - mapeamento de categorias
 - helpers do dashboard
-- validacoes principais
-- criptografia e rotacao de chave do token Plaid
+- validações principais
+- criptografia e rotação de chave do token Plaid
 - handlers e servicos da Plaid com mocks
 
 ## Validado localmente
@@ -166,4 +166,4 @@ O projeto tem testes para:
 
 ## Sugestoes
 
-Sugestoes, ideias de melhoria e feedback sao bem-vindos. Se quiser contribuir com uma observacao ou proposta de evolucao para o projeto, fique a vontade para abrir uma issue.
+Sugestoes, ideias de melhoria e feedback sao bem-vindos. Se quiser contribuir com uma observação ou proposta de evolução para o projeto, fique a vontade para abrir uma issue.

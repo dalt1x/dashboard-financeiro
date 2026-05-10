@@ -25,21 +25,21 @@ export default async function DashboardPage() {
       <PageHeader
         eyebrow="Visao geral"
         title="Seu comando financeiro"
-        description="Monitore o saldo consolidado, acompanhe categorias e valide a integracao completa entre frontend, backend, PostgreSQL e Plaid Sandbox."
+        description="Monitore o saldo consolidado, acompanhe categorias e valide a integração completa entre frontend, backend, PostgreSQL e Plaid Sandbox."
         actions={<PlaidConnectButton />}
       />
 
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <MetricCard metric="balance" title="Saldo total das contas" description="Soma dos saldos atuais" value={summary.totalBalance} />
-        <MetricCard metric="expense" title="Despesas do mes" description="Saidas no mes atual" value={summary.totalSpentMonth} />
-        <MetricCard metric="income" title="Receitas do mes" description="Entradas no mes atual" value={summary.totalIncomeMonth} />
-        <MetricCard metric="balance" title="Transacoes persistidas" description="Total de lancamentos" value={summary.totalTransactions} />
+        <MetricCard metric="expense" title="Despesas do mês" description="Saidas no mês atual" value={summary.totalSpentMonth} />
+        <MetricCard metric="income" title="Receitas do mês" description="Entradas no mês atual" value={summary.totalIncomeMonth} />
+        <MetricCard metric="balance" title="Transações persistidas" description="Total de lançamentos" value={summary.totalTransactions} />
       </div>
 
       <Card className="panel-tint border-[var(--color-border)]">
         <CardContent className="grid gap-5 pt-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div>
-            <p className="text-muted text-sm">Status da integracao</p>
+            <p className="text-muted text-sm">Status da integração</p>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <Badge variant={plaidItems.length > 0 ? "success" : "secondary"}>
                 {plaidItems.length > 0 ? `${plaidItems.length} item(ns) conectados` : "Nenhuma conta conectada"}

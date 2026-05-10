@@ -37,9 +37,9 @@ export default async function SettingsPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        eyebrow="Configuracoes"
-        title="Integracao e ambiente"
-        description="Gerencie o status da conexao Plaid, execute sincronizacoes, ajuste os orcamentos mensais e consulte o setup local."
+        eyebrow="Configurações"
+        title="Integração e ambiente"
+        description="Gerencie o status da conexao Plaid, execute sincronizações, ajuste os orçamentos mensais e consulte o setup local."
         actions={
           <>
             <PlaidConnectButton />
@@ -54,7 +54,7 @@ export default async function SettingsPage() {
           <CardHeader>
             <CardTitle>Status Plaid</CardTitle>
             <CardDescription>
-              Itens conectados no sandbox e ultimas sincronizacoes.
+              Itens conectados no sandbox e ultimas sincronizações.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -69,11 +69,11 @@ export default async function SettingsPage() {
                     </Badge>
                     <Badge variant="secondary">{item._count.accounts} contas</Badge>
                     <Badge variant="secondary">
-                      {item._count.transactions} transacoes
+                      {item._count.transactions} transações
                     </Badge>
                   </div>
                   <p className="text-muted mt-3 text-sm">
-                    Ultima sincronizacao:{" "}
+                    Ultima sincronização:{" "}
                     {item.lastSyncedAt ? formatDate(item.lastSyncedAt) : "Nunca sincronizado"}
                   </p>
                 </div>
@@ -99,7 +99,7 @@ export default async function SettingsPage() {
               3. Se quiser um usuario inicial, rode <code>npm run db:seed</code>.
             </p>
             <p>
-              4. Inicie a aplicacao com <code>npm run dev</code> e conecte uma conta de
+              4. Inicie a aplicação com <code>npm run dev</code> e conecte uma conta de
               teste da Plaid.
             </p>
           </CardContent>

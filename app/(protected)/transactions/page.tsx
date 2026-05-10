@@ -46,9 +46,9 @@ export default async function TransactionsPage({ searchParams }: Props) {
   return (
     <div className="space-y-6">
       <PageHeader
-        eyebrow="Transacoes"
-        title="Explorador de transacoes"
-        description="Filtre por periodo, categoria, tipo e termo de busca. A categoria interna pode ser ajustada manualmente por transacao."
+        eyebrow="Transações"
+        title="Explorador de transações"
+        description="Filtre por periodo, categoria, tipo e termo de busca. A categoria interna pode ser ajustada manualmente por transação."
       />
 
       <Card className="border-[var(--color-border)] bg-[var(--color-panel-strong)]">
@@ -57,7 +57,7 @@ export default async function TransactionsPage({ searchParams }: Props) {
             <Input
               defaultValue={params.query}
               name="query"
-              placeholder="Buscar por descricao ou merchant"
+              placeholder="Buscar por descrição ou merchant"
             />
             <Input defaultValue={params.from} name="from" type="date" />
             <Input defaultValue={params.to} name="to" type="date" />
@@ -95,7 +95,7 @@ export default async function TransactionsPage({ searchParams }: Props) {
             <TableHeader>
               <TableRow>
                 <TableHead>Data</TableHead>
-                <TableHead>Descricao</TableHead>
+                <TableHead>Descrição</TableHead>
                 <TableHead>Conta</TableHead>
                 <TableHead>Categoria</TableHead>
                 <TableHead>Tipo</TableHead>
@@ -106,7 +106,7 @@ export default async function TransactionsPage({ searchParams }: Props) {
               {result.items.length === 0 ? (
                 <TableRow>
                   <TableCell className="text-muted py-10 text-center text-sm" colSpan={6}>
-                    Nenhuma transacao encontrada para os filtros atuais.
+                    Nenhuma transação encontrada para os filtros atuais.
                   </TableCell>
                 </TableRow>
               ) : (
@@ -175,7 +175,7 @@ export default async function TransactionsPage({ searchParams }: Props) {
 
           <div className="mt-6 flex items-center justify-between">
             <p className="text-muted text-sm">
-              Pagina {result.page} de {result.totalPages} • {result.total} transacoes
+              Pagina {result.page} de {result.totalPages} • {result.total} transações
             </p>
             <div className="flex gap-2">
               <Button asChild disabled={result.page <= 1} variant="secondary">
