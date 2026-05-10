@@ -39,7 +39,7 @@ export default async function SettingsPage() {
       <PageHeader
         eyebrow="Configuracoes"
         title="Integracao e ambiente"
-        description="Gerencie o status da conexao Plaid, execute sincronizacoes e ajuste os orcamentos mensais da aplicacao."
+        description="Gerencie o status da conexao Plaid, execute sincronizacoes, ajuste os orcamentos mensais e consulte o setup local."
         actions={
           <>
             <PlaidConnectButton />
@@ -79,6 +79,29 @@ export default async function SettingsPage() {
                 </div>
               ))
             )}
+          </CardContent>
+        </Card>
+
+        <Card className="border-[var(--color-border)] bg-[var(--color-panel-strong)]">
+          <CardHeader>
+            <CardTitle>Setup local</CardTitle>
+            <CardDescription>Checklist rapido para rodar o projeto.</CardDescription>
+          </CardHeader>
+          <CardContent className="text-muted space-y-3 text-sm">
+            <p>
+              1. Configure o arquivo <code>.env</code> com PostgreSQL, segredos de sessao
+              e credenciais da Plaid Sandbox.
+            </p>
+            <p>
+              2. Rode <code>npm run prisma:migrate</code> para aplicar as migrations.
+            </p>
+            <p>
+              3. Se quiser um usuario inicial, rode <code>npm run db:seed</code>.
+            </p>
+            <p>
+              4. Inicie a aplicacao com <code>npm run dev</code> e conecte uma conta de
+              teste da Plaid.
+            </p>
           </CardContent>
         </Card>
       </div>
