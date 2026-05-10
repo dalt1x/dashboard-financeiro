@@ -243,7 +243,7 @@ async function syncTransactionsForItem(
 
 export async function createPlaidLinkToken(userId: string) {
   const response = await plaidClient.linkTokenCreate({
-    client_name: "Dashboard Interativo",
+    client_name: "Dashboard Financeiro",
     user: { client_user_id: userId },
     products: plaidProducts,
     country_codes: plaidCountryCodes,

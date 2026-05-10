@@ -40,7 +40,7 @@ export function AppSidebar({
           </div>
           <div>
             <p className="text-sm text-teal-50/80">Plaid Sandbox</p>
-            <h1 className="text-lg font-semibold">Dashboard Interativo</h1>
+            <h1 className="text-lg font-semibold">Dashboard Financeiro</h1>
           </div>
         </div>
         <div className="space-y-1">

@@ -1,4 +1,4 @@
-# Dashboard Interativo
+# Dashboard Financeiro
 
 Aplicacao full-stack para conectar contas no Plaid Sandbox, importar transacoes, categorizar gastos e visualizar indicadores financeiros em um dashboard moderno.
 

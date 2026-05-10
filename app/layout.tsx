@@ -5,7 +5,7 @@ import { getThemeBootScript } from "@/lib/theme";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dashboard Interativo",
+  title: "Dashboard Financeiro",
   description:
     "Aplicacao interativa para consolidacao de contas, transacoes e analises financeiras com Plaid Sandbox.",
 };
