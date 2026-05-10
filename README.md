@@ -6,11 +6,37 @@ Aplicação full-stack para conectar contas no Plaid Sandbox, importar transaç�
 
 Este projeto foi construido para demonstrar:
 
-- integraçã com API financeira
+- integração com API financeira
 - autentição com isolamento por usuario
 - persistencia com PostgreSQL e Prisma
 - dashboard com filtros, categorias, comparativos e orcamentos
 - frontend moderno com Next.js App Router
+
+## Preview
+
+### Login 
+
+![Tela de login](.docs/images/login.png)
+
+### Dashboard financeiro
+
+![Dashboard financeiro](.docs/images/dashboard.png)
+
+### Analytics e categorias
+
+![Analytics e categorias](.docs/images/analytics.png)
+
+### Explorador de transações
+
+![Explorador de transações](.docs/images/transactions.png)
+
+### Contas conectadas
+
+![Contas conectadas](.docs/images/accounts.png)
+
+### Configurações
+
+![Configurações](.docs/images/settings.png)
 
 ## Stack
 
