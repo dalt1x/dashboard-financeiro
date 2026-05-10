@@ -16,7 +16,7 @@ export function BudgetProgressCard({
   return (
     <Card className="panel-tint border-[var(--color-border)]">
       <CardHeader>
-        <CardTitle>Orcamentos mensais</CardTitle>
+        <CardTitle>Orçamentos mensais</CardTitle>
         <CardDescription>
           Planejamento por categoria com acompanhamento em tempo real.
         </CardDescription>
@@ -43,7 +43,7 @@ export function BudgetProgressCard({
 
         {budgets.length === 0 ? (
           <div className="empty-state rounded-2xl border border-dashed px-4 py-8 text-center text-sm">
-            Defina orcamentos mensais em Configuracoes para acompanhar metas por categoria.
+            Defina orçamentos mensais em configurações para acompanhar metas por categoria.
           </div>
         ) : (
           <div className="space-y-3">

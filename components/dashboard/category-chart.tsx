@@ -30,7 +30,7 @@ export function CategoryChart({
     <Card className="panel-tint min-w-0 border-[var(--color-border)]">
       <CardHeader>
         <CardTitle>Gastos por categoria</CardTitle>
-        <CardDescription>Distribuicao consolidada das despesas sincronizadas.</CardDescription>
+        <CardDescription>Distribuição consolidada das despesas sincronizadas.</CardDescription>
       </CardHeader>
       <CardContent className="grid min-w-0 gap-6 lg:grid-cols-[1.3fr_1fr]">
         <div className="h-72 min-h-72 min-w-0" ref={ref}>

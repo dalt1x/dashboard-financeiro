@@ -34,7 +34,7 @@ export function ComparisonCard({ comparison }: { comparison: PeriodComparison })
     <Card className="panel-tint border-[var(--color-border)]">
       <CardHeader>
         <CardTitle>Comparativo de periodo</CardTitle>
-        <CardDescription>Mes atual versus mes anterior.</CardDescription>
+        <CardDescription>Mês atual versus mês anterior.</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4 md:grid-cols-2">
         <div className="surface-soft rounded-2xl p-4">
@@ -43,7 +43,7 @@ export function ComparisonCard({ comparison }: { comparison: PeriodComparison })
             {formatCurrency(comparison.currentSpent)}
           </p>
           <p className="text-muted mt-2 text-sm">
-            Mes anterior: {formatCurrency(comparison.previousSpent)}
+            Mês anterior: {formatCurrency(comparison.previousSpent)}
           </p>
           <div className="mt-3">
             <DeltaIndicator inverse value={comparison.spentDelta} />
@@ -55,7 +55,7 @@ export function ComparisonCard({ comparison }: { comparison: PeriodComparison })
             {formatCurrency(comparison.currentIncome)}
           </p>
           <p className="text-muted mt-2 text-sm">
-            Mes anterior: {formatCurrency(comparison.previousIncome)}
+            Mês anterior: {formatCurrency(comparison.previousIncome)}
           </p>
           <div className="mt-3">
             <DeltaIndicator value={comparison.incomeDelta} />

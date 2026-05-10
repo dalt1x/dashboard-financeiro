@@ -59,7 +59,7 @@ export default async function DashboardPage() {
               </p>
             </div>
             <div className="surface-soft rounded-2xl px-4 py-4">
-              <p className="data-label">Lancamentos</p>
+              <p className="data-label">Lançamentos</p>
               <p className="text-strong mt-2 text-2xl font-semibold">
                 {plaidItems.reduce((sum, item) => sum + item._count.transactions, 0)}
               </p>

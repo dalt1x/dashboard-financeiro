@@ -61,11 +61,11 @@ export function BudgetPlanner({
       const data = await response.json();
 
       if (!response.ok) {
-        toast.error(data.error ?? "Nao foi possivel salvar os orcamentos.");
+        toast.error(data.error ?? "Nao foi possivel salvar os orçamentos.");
         return;
       }
 
-      toast.success("Orcamentos mensais atualizados.");
+      toast.success("Orçamentos mensais atualizados.");
       router.refresh();
     });
   }
@@ -73,7 +73,7 @@ export function BudgetPlanner({
   return (
     <Card className="panel-tint border-[var(--color-border)]">
       <CardHeader>
-        <CardTitle>Orcamento mensal</CardTitle>
+        <CardTitle>Orçamento mensal</CardTitle>
         <CardDescription>
           Planejamento de categorias para {monthLabel}.
         </CardDescription>
@@ -109,7 +109,7 @@ export function BudgetPlanner({
           </div>
           <Button disabled={isPending} onClick={handleSave}>
             <Save className="mr-2 h-4 w-4" />
-            Salvar orcamentos
+            Salvar orçamentos
           </Button>
         </div>
       </CardContent>

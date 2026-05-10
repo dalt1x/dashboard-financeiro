@@ -26,13 +26,13 @@ export function RecentTransactions({
   return (
     <Card className="panel-tint border-[var(--color-border)]">
       <CardHeader>
-        <CardTitle>Transacoes recentes</CardTitle>
-        <CardDescription>Movimentacoes mais novas salvas no banco.</CardDescription>
+        <CardTitle>Transações recentes</CardTitle>
+        <CardDescription>Movimentações mais novas salvas no banco.</CardDescription>
       </CardHeader>
       <CardContent className="space-y-3">
         {transactions.length === 0 ? (
           <div className="empty-state rounded-2xl border border-dashed px-4 py-8 text-center text-sm">
-            Nenhuma transacao sincronizada ainda.
+            Nenhuma transação sincronizada ainda.
           </div>
         ) : (
           transactions.map((transaction) => (

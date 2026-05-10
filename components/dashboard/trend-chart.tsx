@@ -15,8 +15,8 @@ export function TrendChart({
   return (
     <Card className="panel-tint min-w-0 border-[var(--color-border)]">
       <CardHeader>
-        <CardTitle>Evolucao mensal</CardTitle>
-        <CardDescription>Receitas e despesas dos ultimos meses.</CardDescription>
+        <CardTitle>Evolução mensal</CardTitle>
+        <CardDescription>Receitas e despesas dos últimos meses.</CardDescription>
       </CardHeader>
       <CardContent className="min-w-0">
         <div className="h-80 min-h-80 min-w-0" ref={ref}>
