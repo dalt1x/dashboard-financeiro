@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f3ee;
+  --foreground: #171717;
+  --color-app: #f6f3ee;
+  --color-panel: rgba(255, 252, 247, 0.92);
+  --color-panel-strong: rgba(255, 255, 255, 0.94);
+  --color-surface-soft: rgba(120, 113, 108, 0.08);
+  --color-surface-strong: rgba(255, 255, 255, 0.72);
+  --color-skeleton: rgba(148, 163, 184, 0.18);
+  --color-text-strong: #111827;
+  --color-muted: #746a61;
+  --color-border: rgba(23, 23, 23, 0.08);
+  --color-brand: #0f766e;
+  --color-brand-foreground: #ecfeff;
+  --color-danger: #dc2626;
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-sidebar-gradient: linear-gradient(135deg, #115e59 0%, #0f766e 55%, #164e63 100%);
+  --color-nav-active-bg: #1c1917;
+  --color-nav-active-text: #ffffff;
+  --color-glow-primary: rgba(15, 118, 110, 0.12);
+  --color-glow-secondary: rgba(234, 179, 8, 0.08);
+  --color-page-start: #faf6ef;
+  --color-page-end: #f4f0e8;
+  --chart-income: #15803d;
+  --chart-income-fill: rgba(21, 128, 61, 0.3);
+  --chart-income-fade: rgba(21, 128, 61, 0.03);
+  --chart-expense: #0f766e;
+  --chart-expense-fill: rgba(15, 118, 110, 0.3);
+  --chart-expense-fade: rgba(15, 118, 110, 0.03);
+  --chart-grid: rgba(0, 0, 0, 0.08);
+  --chart-category-1: #0f766e;
+  --chart-category-2: #d97706;
+  --chart-category-3: #2563eb;
+  --chart-category-4: #be123c;
+  --chart-category-5: #7c3aed;
+  --chart-category-6: #15803d;
+  --chart-category-7: #0f172a;
+  --chart-category-8: #0891b2;
+  --chart-category-9: #78716c;
+  --font-sans: "Segoe UI Variable Display", "Aptos", "Trebuchet MS", sans-serif;
+  --font-mono: "Consolas", "SFMono-Regular", "Liberation Mono", monospace;
+  --radius: 1.2rem;
+  --shadow-panel: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme="dark"] {
+  --background: #11091a;
+  --foreground: #f7f2ff;
+  --color-app: #11091a;
+  --color-panel: rgba(27, 16, 43, 0.88);
+  --color-panel-strong: rgba(32, 19, 51, 0.96);
+  --color-surface-soft: rgba(167, 139, 250, 0.14);
+  --color-surface-strong: rgba(55, 35, 88, 0.78);
+  --color-skeleton: rgba(167, 139, 250, 0.12);
+  --color-text-strong: #f9f5ff;
+  --color-muted: #cdbfe4;
+  --color-border: rgba(196, 181, 253, 0.16);
+  --color-brand: #b065ff;
+  --color-brand-foreground: #170a28;
+  --color-danger: #fb7185;
+  --color-success: #34d399;
+  --color-warning: #f59e0b;
+  --color-sidebar-gradient: linear-gradient(135deg, #3b0764 0%, #6d28d9 52%, #312e81 100%);
+  --color-nav-active-bg: #b065ff;
+  --color-nav-active-text: #170a28;
+  --color-glow-primary: rgba(176, 101, 255, 0.24);
+  --color-glow-secondary: rgba(79, 70, 229, 0.16);
+  --color-page-start: #140a20;
+  --color-page-end: #0f0817;
+  --chart-income: #34d399;
+  --chart-income-fill: rgba(52, 211, 153, 0.26);
+  --chart-income-fade: rgba(52, 211, 153, 0.03);
+  --chart-expense: #b065ff;
+  --chart-expense-fill: rgba(176, 101, 255, 0.24);
+  --chart-expense-fade: rgba(176, 101, 255, 0.03);
+  --chart-grid: rgba(196, 181, 253, 0.14);
+  --chart-category-1: #b065ff;
+  --chart-category-2: #8b5cf6;
+  --chart-category-3: #38bdf8;
+  --chart-category-4: #fb7185;
+  --chart-category-5: #f59e0b;
+  --chart-category-6: #34d399;
+  --chart-category-7: #facc15;
+  --chart-category-8: #60a5fa;
+  --chart-category-9: #d4d4d8;
+  --shadow-panel: 0 22px 56px rgba(2, 0, 7, 0.42);
+}
+
+@theme inline {
+  --color-background: var(--color-panel);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, var(--color-glow-primary), transparent 30%),
+    radial-gradient(circle at top right, var(--color-glow-secondary), transparent 25%),
+    linear-gradient(180deg, var(--color-page-start) 0%, var(--color-page-end) 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-brand) 26%, transparent);
+}
+
+.surface {
+  background: var(--color-panel);
+  box-shadow: var(--shadow-panel);
+}
+
+.surface-strong {
+  background: var(--color-panel-strong);
+  box-shadow: var(--shadow-panel);
+}
+
+.app-shell {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--color-panel-strong) 82%, transparent), color-mix(in srgb, var(--color-panel) 88%, transparent)),
+    radial-gradient(circle at top, color-mix(in srgb, var(--color-brand) 12%, transparent), transparent 45%);
+  backdrop-filter: blur(14px);
+}
+
+.panel-tint {
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--color-panel-strong) 96%, transparent), color-mix(in srgb, var(--color-panel) 92%, transparent)),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--color-brand) 10%, transparent), transparent 28%);
+}
+
+.surface-soft {
+  background: var(--color-surface-soft);
+}
+
+.surface-soft-hover {
+  background: var(--color-surface-soft);
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.surface-soft-hover:hover {
+  background: color-mix(in srgb, var(--color-surface-soft) 55%, var(--color-panel-strong));
+}
+
+.empty-state {
+  background: var(--color-surface-soft);
+  color: var(--color-muted);
+  border-color: var(--color-border);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-strong {
+  color: var(--color-text-strong);
+}
+
+.text-positive {
+  color: var(--color-success);
+}
+
+.text-negative {
+  color: var(--color-danger);
+}
+
+.data-label {
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.chart-skeleton {
+  background: var(--color-skeleton);
+}
+
+.sidebar-gradient {
+  background: var(--color-sidebar-gradient);
+}
+
+.nav-link {
+  color: var(--color-muted);
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.nav-link:hover {
+  background: var(--color-surface-soft);
+  color: var(--foreground);
+}
+
+.nav-link-active {
+  background: var(--color-nav-active-bg);
+  color: var(--color-nav-active-text);
+  box-shadow: 0 18px 32px color-mix(in srgb, var(--color-nav-active-bg) 18%, transparent);
+}
