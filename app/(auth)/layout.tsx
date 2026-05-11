@@ -6,7 +6,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
     <QueryProvider>
       <div className="min-h-screen px-6 py-10">
         <div className="mx-auto mb-4 flex max-w-6xl justify-end">
-          <ThemeToggle />
+          <ThemeToggle compact />
         </div>
         <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-6xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <section className="space-y-8">
